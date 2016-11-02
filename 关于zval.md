@@ -59,7 +59,7 @@ PHP变量的值存储到zval结构体中,[zval结构体定义](https://github.co
 	#define Z_TYPE(zval)				zval_get_type(&(zval))
 	#define Z_TYPE_P(zval_p) 			Z_TYPE(*(zval_p))
 
-[zval_get _type](https://github.com/php/php-src/blob/master/Zend/zend_types.h#L330-L332)方法返回的是_zval_struct结构体中u1.v.type存储的[变量类型值](https://github.com/php/php-src/blob/master/Zend/zend_types.h#L302-L313)
+[zval_get\\_type](https://github.com/php/php-src/blob/master/Zend/zend_types.h#L330-L332)方法返回的是_zval_struct结构体中u1.v.type存储的[变量类型值](https://github.com/php/php-src/blob/master/Zend/zend_types.h#L302-L313)
 
 	static zend_always_inline zend_uchar zval_get_type(const zval* pz) {
 		return pz->u1.v.type;
