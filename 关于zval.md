@@ -1,5 +1,10 @@
 #关于zval
 
+先行阅读：
+
+1. 《TIPI: 深入理解PHP内核》 第三章 [变量及数据类型](http://www.php-internals.com/book/?p=chapt03/03-00-variable-and-data-types)
+2. 《PHP扩展开发及内核应用》 第二章 [PHP变量在内核中的实现](https://github.com/walu/phpbook/blob/master/2.md)
+
 PHP变量的值存储到zval结构体中,[zval结构体定义](https://github.com/php/php-src/blob/master/Zend/zend_types.h#L101-L143)在Zend/zend_types.h文件。 
 
     typedef struct _zval_struct zval;
